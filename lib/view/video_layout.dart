@@ -6,6 +6,7 @@ import 'package:tata_classedge/db/db_provider.dart';
 import 'package:tata_classedge/db/note_model.dart';
 import 'package:tata_classedge/provider/notes_provider_model.dart';
 import 'package:tata_classedge/view/note_input_modal.dart';
+import 'package:tata_classedge/view/quiz_layout.dart';
 import 'package:tata_classedge/view/show_note_modal.dart';
 import 'package:video_player/video_player.dart';
 
@@ -35,6 +36,9 @@ class _VideoLayout extends State<VideoLayout> with TickerProviderStateMixin {
       setState(() {
         _controller.play();
       });
+    });
+    _controller.addListener(() {
+      videoListener();
     });
   }
 
@@ -74,6 +78,7 @@ class _VideoLayout extends State<VideoLayout> with TickerProviderStateMixin {
                             if (snapshot.data != null) {
                               List<Notes> notes = snapshot.data ?? null;
                               myModel.setNotesFromDb(notes);
+                              myModel.updatePlayPause(true);
                               return Consumer<NotesProviderModel>(
                                   builder: (context, myModel, child) {
                                 _controller.addListener(() {
@@ -211,8 +216,7 @@ class _VideoLayout extends State<VideoLayout> with TickerProviderStateMixin {
                                                         child: Icon(
                                                           myModel.isPlay
                                                               ? Icons.pause
-                                                              : Icons
-                                                                  .play_arrow,
+                                                              : Icons.play_arrow,
                                                         ),
                                                       ),
                                                     ),
@@ -287,10 +291,13 @@ class _VideoLayout extends State<VideoLayout> with TickerProviderStateMixin {
   }
 
   void videoListener() {
-    // print("Duration " + _controller.value.position.inSeconds.toString());
-    // if (_controller.value.position == _controller.value.duration) {
-    //   setState(() {});
-    // }
+    print("Duration " + _controller.value.position.inSeconds.toString());
+    if (_controller.value.position == _controller.value.duration) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => QuizLayout()),
+      );
+    }
     // for (int i = 0; i < notesPosition.length; i++) {
     //   if (videoPosition == notesPosition[i].notePosition) {
     //     setState(() {

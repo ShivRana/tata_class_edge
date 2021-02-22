@@ -1,6 +1,6 @@
 [
   {
-    "instructions": "<p>Select the correct answer.</p>",
+    "instructions": "Select the correct answer",
     "questionID": "tqqb-60fb55ec-0df1-4628-91c0-2fb03a99a277",
     "data": {
       "stimulus_media": "",
@@ -24,16 +24,16 @@
           }
         ]
       },
-      "stimulus": "<p>In a democracy, why do we choose our leaders through elections?</p>",
+      "stimulus": "In a democracy,\nwhy do we choose our leaders through elections?",
       "options": [
         {
           "feedback": [
             {
-              "text": "<p>This is not the reason why we elect our leaders in a democracy.&nbsp;</p>"
+              "text": "This is not the reason why we elect our leaders in a democracy"
             }
           ],
           "score": 0,
-          "label": "<p>To ensure all religions are treated the same</p>",
+          "label": "To ensure all religions are treated the same",
           "media": null,
           "value": 0,
           "isCorrect": 0
@@ -41,11 +41,11 @@
         {
           "feedback": [
             {
-              "text": "<p>All democratic countries have a constitution that has provisions to protect the basic nature of society.&nbsp;</p>"
+              "text": "All democratic countries have a constitution that has provisions to protect the basic nature of society"
             }
           ],
           "score": 0,
-          "label": "<p>To ensure the country does not become a monarchy</p>",
+          "label": "To ensure the country does not become a monarchy",
           "media": null,
           "value": 1,
           "isCorrect": 0
@@ -57,7 +57,7 @@
             }
           ],
           "score": 2,
-          "label": "<p>To exercise power on our behalf</p>",
+          "label": "To exercise power on our behalf",
           "media": null,
           "value": 2,
           "isCorrect": 1
@@ -69,7 +69,7 @@
             }
           ],
           "score": 0,
-          "label": "<p>To draft the constitution of the country</p>",
+          "label": "To draft the constitution of the country",
           "media": null,
           "value": 3,
           "isCorrect": 0
@@ -89,7 +89,7 @@
     "widget_type": "response"
   },
   {
-    "instructions": "<p>Select the correct answer.</p>",
+    "instructions": "Select the correct answer",
     "questionID": "tqqb-8f2e2475-728c-4754-9ab6-3f48b10d3700",
     "data": {
       "stimulus_media": "",
@@ -113,12 +113,12 @@
           }
         ]
       },
-      "stimulus": "<p>Before 2008, which form of government did Nepal have?&nbsp;</p>",
+      "stimulus": "Before 2008, which form of government did Nepal have?",
       "options": [
         {
           "feedback": [
             {
-              "text": "<p>Nepal was not an oligarchy, which is rule by a small group of influential people.&nbsp;</p>"
+              "text": "Nepal was not an oligarchy, which is rule by a small group of influential people."
             }
           ],
           "score": 0,
@@ -129,7 +129,7 @@
         {
           "feedback": [
             {
-              "text": "<p>Nepal was not an aristocracy. Aristocracy is not a form of government. It implies the highest class or nobility in certain societies.</p>"
+              "text": "Nepal was not an aristocracy. Aristocracy is not a form of government. It implies the highest class or nobility in certain societies."
             }
           ],
           "score": 0,
@@ -140,7 +140,7 @@
         {
           "feedback": [
             {
-              "text": "<p>Think again. Nepal was not a democracy before 2008.&nbsp;</p>"
+              "text": "Think again. Nepal was not a democracy before 2008."
             }
           ],
           "score": 0,
@@ -151,7 +151,7 @@
         {
           "feedback": [
             {
-              "text": "<p>Before 2008, Nepal was a monarchy wherein the power of the state lies in the hand of one person.</p>"
+              "text": "Before 2008, Nepal was a monarchy wherein the power of the state lies in the hand of one person."
             }
           ],
           "score": 1,
@@ -164,7 +164,7 @@
       "type": "SCQ"
     },
     "solution": {
-      "answer": "<p>Before 2008, Nepal was a monarchy wherein the power of the state lies in the hand of one person.</p>",
+      "answer": "Before 2008, Nepal was a monarchy wherein the power of the state lies in the hand of one person.",
       "step_nav": false,
       "type": "Solution"
     },
